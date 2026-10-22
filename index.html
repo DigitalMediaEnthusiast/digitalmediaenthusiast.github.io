@@ -59,7 +59,10 @@
   .project h2{ font-size:clamp(1.8rem,3vw,2.85rem); line-height:1.05; }
   .project p{ margin-top:18px; max-width:68ch; font-size:1rem; line-height:1.45; }
   .project-video p{ max-width:none; }
-  .project .kicker{ margin-top:12px; font-size:.95rem; font-weight:500; color:var(--ink-2); }
+  .campaign{ margin-top:48px; }
+  .campaign + .campaign{ margin-top:64px; }
+  .campaign h3{ margin:0; font-weight:500; font-size:clamp(1.4rem,2.2vw,2rem); line-height:1.1; text-wrap:balance; }
+  .project .kicker{ margin-top:8px; font-size:.95rem; font-weight:500; color:var(--ink-2); }
   .project .kicker + p{ margin-top:10px; }
 
   /* Justified rows: each item grows by its aspect ratio so a row shares one height */
@@ -120,27 +123,80 @@
     <h1>Portfolio</h1>
 
     <section class="project">
-      <h2>Graphics Campaign</h2>
-      <p class="kicker">Concept project: Harbor &amp; Pine, a fictional coworking brand</p>
-      <p>A launch campaign for a coworking company opening its second location. One visual system carries across every touchpoint: keynote slides, video lower thirds, and social posts for the grand-opening invitation, weekly programming, a founding-member offer, workshops, and hiring. A restrained pine-and-brass palette, a confident serif, and an arched-doorway motif keep it professional and welcoming.</p>
-      <div class="rows">
-        <div class="row">
-          <div class="wide" style="--ar:1.78"><img src="images/campaign-keynote.webp" alt="Keynote slide reading “Open doors,” with an illustrated arched doorway opening onto warm light" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/campaign-week.webp" alt="“This week at Harbor &amp; Pine” social post listing five weekday events and times" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/campaign-numbers.webp" alt="“Built for the way you work” post: 120 open desks, 14 private offices, 3 podcast booths, 1 rooftop terrace" loading="lazy"></div>
+      <h2>Graphics Campaigns</h2>
+      <p>Three concept campaigns for fictional organizations. Each one carries its own visual system across presentation slides, video lower thirds, and social posts.</p>
+
+      <article class="campaign">
+        <h3>Harbor &amp; Pine</h3>
+        <p class="kicker">Concept project: launch campaign for a fictional coworking brand</p>
+        <p>A launch campaign for a coworking company opening its second location: keynote slides, video lower thirds, and social posts for the grand-opening invitation, weekly programming, a founding-member offer, workshops, and hiring. A restrained pine-and-brass palette, a confident serif, and an arched-doorway motif keep it professional and welcoming.</p>
+        <div class="rows">
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/campaign-keynote.webp" alt="Keynote slide reading “Open doors,” with an illustrated arched doorway opening onto warm light" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/campaign-week.webp" alt="“This week at Harbor &amp; Pine” social post listing five weekday events and times" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/campaign-numbers.webp" alt="“Built for the way you work” post: 120 open desks, 14 private offices, 3 podcast booths, 1 rooftop terrace" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div style="--ar:.8"><img src="images/campaign-invite.webp" alt="Grand opening invitation with an arched “You’re invited” headline" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/campaign-offer.webp" alt="Founding member offer post: $149 per month for the first 50 members" loading="lazy"></div>
+            <div class="small" style="--ar:1"><img src="images/campaign-quote.webp" alt="Brand quote card reading “Good work needs good company.”" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/campaign-hiring.webp" alt="Hiring post for a Community Manager role" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/campaign-lunch.webp" alt="Lunch &amp; Learn workshop post on pricing your services" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/campaign-lower-third-founder.webp" alt="Video lower third naming the company founder over an illustrated interview shot" loading="lazy"></div>
+            <div class="wide" style="--ar:1.78"><img src="images/campaign-lower-third-event.webp" alt="Video lower third promoting the weekly Founders Breakfast over an illustrated event shot" loading="lazy"></div>
+          </div>
         </div>
-        <div class="row">
-          <div style="--ar:.8"><img src="images/campaign-invite.webp" alt="Grand opening invitation with an arched “You’re invited” headline" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/campaign-offer.webp" alt="Founding member offer post: $149 per month for the first 50 members" loading="lazy"></div>
-          <div class="small" style="--ar:1"><img src="images/campaign-quote.webp" alt="Brand quote card reading “Good work needs good company.”" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/campaign-hiring.webp" alt="Hiring post for a Community Manager role" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/campaign-lunch.webp" alt="Lunch &amp; Learn workshop post on pricing your services" loading="lazy"></div>
+      </article>
+
+      <article class="campaign">
+        <h3>Rise &amp; Rye</h3>
+        <p class="kicker">Concept project: fall menu campaign for a fictional neighborhood bakery</p>
+        <p>A seasonal campaign for a neighborhood bakery: a staff kickoff slide, lower thirds for a behind-the-scenes video series, and social posts for the bake schedule, online preorders, a featured item, a loyalty card, hiring, and a kids’ class. Bold, warm type and simple bread illustrations give it a friendly, handmade feel.</p>
+        <div class="rows">
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/bakery-keynote.webp" alt="Staff kickoff slide reading “Warm from the oven,” with an illustrated loaf of bread" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/bakery-schedule.webp" alt="Weekly bake schedule post listing a different bread or pastry for each weekday" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/bakery-preorder.webp" alt="“Skip the line” post explaining online preorders in three steps" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div style="--ar:.8"><img src="images/bakery-donut.webp" alt="Featured item post for apple cider donuts at $3.50 each, with an illustrated donut" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/bakery-loyalty.webp" alt="Loyalty card post: buy nine, the tenth is free" loading="lazy"></div>
+            <div class="small" style="--ar:1"><img src="images/bakery-quote.webp" alt="Quote card reading “Good bread takes time.”" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/bakery-hiring.webp" alt="Hiring post for a morning baker" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/bakery-class.webp" alt="Kids’ baking class post for Saturday mornings" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/bakery-lower-third-baker.webp" alt="Video lower third naming the head baker over an illustrated bakery kitchen" loading="lazy"></div>
+            <div class="wide" style="--ar:1.78"><img src="images/bakery-lower-third-episode.webp" alt="Video episode title lower third for a behind-the-scenes series about croissant dough" loading="lazy"></div>
+          </div>
         </div>
-        <div class="row">
-          <div class="wide" style="--ar:1.78"><img src="images/campaign-lower-third-founder.webp" alt="Video lower third naming the company founder over an illustrated interview shot" loading="lazy"></div>
-          <div class="wide" style="--ar:1.78"><img src="images/campaign-lower-third-event.webp" alt="Video lower third promoting the weekly Founders Breakfast over an illustrated event shot" loading="lazy"></div>
+      </article>
+
+      <article class="campaign">
+        <h3>Larkspur University, DATA 101</h3>
+        <p class="kicker">Concept project: lecture video graphics for a fictional university’s online course</p>
+        <p>A graphics package for an online course’s lecture videos: a lecture title card, lower thirds for the instructor and key terms, and course posts for enrollment, weekly tasks, an instructor introduction, lecture recaps, office hours, and quiz reminders. Graph-paper texture, highlighter accents, and clear serif headings keep the focus on learning.</p>
+        <div class="rows">
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/lecture-title-card.webp" alt="Lecture title card for “Reading a chart critically,” with a module progress bar and a two-chart comparison" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/lecture-course-promo.webp" alt="Course enrollment post for DATA 101: Thinking with Data" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/lecture-this-week.webp" alt="Weekly checklist post for Module 3 lectures, discussion, and quiz" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div style="--ar:.8"><img src="images/lecture-instructor.webp" alt="“Meet your instructor” post with an illustrated portrait and a short quote" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/lecture-takeaways.webp" alt="Lecture recap post with three numbered takeaways" loading="lazy"></div>
+            <div class="small" style="--ar:1"><img src="images/lecture-quote.webp" alt="Quote card reading “Every chart is an argument.”" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/lecture-office-hours.webp" alt="Live office hours post for Thursday evenings on Zoom" loading="lazy"></div>
+            <div style="--ar:.8"><img src="images/lecture-quiz.webp" alt="Quiz reminder post with a countdown to Sunday’s deadline" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/lecture-lower-third-professor.webp" alt="Instructor name lower third over an illustrated lecture recording" loading="lazy"></div>
+            <div class="wide" style="--ar:1.78"><img src="images/lecture-lower-third-key-term.webp" alt="Key-term definition lower third for “Truncated axis” over a chart slide" loading="lazy"></div>
+          </div>
         </div>
-      </div>
+      </article>
     </section>
 
     <section class="project project-video">
