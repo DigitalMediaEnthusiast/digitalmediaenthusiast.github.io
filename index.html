@@ -83,7 +83,8 @@
   .video{ flex:var(--ar) 1 0; min-width:0; }
   .video iframe{ display:block; width:100%; height:auto; aspect-ratio:var(--ar); border:0; background:#000; }
   .project .video-note{ margin-top:14px; font-size:.92rem; color:var(--ink-2); }
-  .video figcaption{ margin-top:8px; font-size:.9rem; color:var(--ink-2); }
+  .video figcaption{ margin-top:10px; font-size:.95rem; line-height:1.4; color:var(--ink-2); }
+  .video figcaption strong{ display:block; margin-bottom:2px; font-weight:500; color:var(--ink); }
   @media (max-width:760px){
     .videos{ flex-direction:column; align-items:stretch; }
     .video{ flex:none; }
@@ -206,9 +207,11 @@
       <div class="videos">
         <figure class="video" style="--ar:1.7778;margin:0">
           <iframe src="https://www.youtube.com/embed/v85tJGSf7U8" title="Truett Financial Wellness Introduction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption><strong>Truett Financial Wellness: Introduction</strong>The first of an eight-video series. Filmed on location, with animation and dynamic typography.</figcaption>
         </figure>
         <figure class="video" style="--ar:1.7778;margin:0">
           <iframe src="https://www.youtube.com/embed/UOu4xt26wjQ" title="IPE Interview" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption><strong>Interprofessional Education Interview</strong>Filmed on location. A composite video combining several interviewees.</figcaption>
         </figure>
       </div>
       <p class="video-note">Note: Captions are not burned into these videos. They were delivered as separate caption files through the video player.</p>
