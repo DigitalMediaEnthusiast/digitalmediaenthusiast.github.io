@@ -91,6 +91,14 @@
     .video.vertical{ width:min(100%, 320px); }
   }
 
+  /* AI workflows */
+  .ai-grid{ margin-top:28px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+  .ai-card{ padding:16px 16px 22px; border-radius:var(--radius); background:#fff; border:1px solid rgba(54,48,42,.12); }
+  .ai-fig svg{ display:block; width:100%; height:auto; border-radius:10px; }
+  .ai-card h3{ margin:16px 4px 0; font-weight:500; font-size:1.35rem; line-height:1.15; }
+  .project .ai-card p{ margin:8px 4px 0; font-size:.98rem; line-height:1.45; max-width:none; }
+  @media (max-width:860px){ .ai-grid{ grid-template-columns:1fr; } }
+
   .site-footer{ padding-block:28px; border-top:1px solid rgba(54,48,42,.25); font-size:.9rem; }
 </style>
 </head>
@@ -126,7 +134,7 @@
 
     <section class="project">
       <h2>Graphics Campaigns</h2>
-      <p>Three concept campaigns for fictional organizations. Each one carries its own visual system across presentation slides, video lower thirds, and social posts.</p>
+      <p>Three concept campaigns for fictional organizations. Each one carries its own visual system across video graphics, presentation slides, social posts, and course pages.</p>
 
       <article class="campaign">
         <h3>Harbor &amp; Pine</h3>
@@ -177,25 +185,22 @@
       </article>
 
       <article class="campaign">
-        <h3>Larkspur University, DATA 101</h3>
-        <p class="kicker">Concept project: lecture video graphics for a fictional university’s online course</p>
-        <p>A graphics package for an online course’s lecture videos: a lecture title card, lower thirds for the instructor and key terms, and course posts for enrollment, weekly tasks, an instructor introduction, lecture recaps, office hours, and quiz reminders. Graph-paper texture, highlighter accents, and clear serif headings keep the focus on learning.</p>
+        <h3>Data 101</h3>
+        <p class="kicker">Concept project: lecture video graphics and Canvas course pages for a fictional online class</p>
+        <p>A matching set of lecture video graphics and Canvas pages for an online Data 101 class. The videos get a title card and lower thirds for the instructor and key terms. The Canvas course uses design-tool layouts for the home page, a module overview, a lecture page with the embedded video and key terms, and a discussion assignment with a rubric. Graph-paper texture, highlighter accents, and clear serif headings carry across the videos and the course site.</p>
         <div class="rows">
           <div class="row">
             <div class="wide" style="--ar:1.78"><img src="images/lecture-title-card.webp" alt="Lecture title card for “Reading a chart critically,” with a module progress bar and a two-chart comparison" loading="lazy"></div>
-            <div style="--ar:.8"><img src="images/lecture-course-promo.webp" alt="Course enrollment post for DATA 101: Thinking with Data" loading="lazy"></div>
-            <div style="--ar:.8"><img src="images/lecture-this-week.webp" alt="Weekly checklist post for Module 3 lectures, discussion, and quiz" loading="lazy"></div>
-          </div>
-          <div class="row">
-            <div style="--ar:.8"><img src="images/lecture-instructor.webp" alt="“Meet your instructor” post with an illustrated portrait and a short quote" loading="lazy"></div>
-            <div style="--ar:.8"><img src="images/lecture-takeaways.webp" alt="Lecture recap post with three numbered takeaways" loading="lazy"></div>
-            <div class="small" style="--ar:1"><img src="images/lecture-quote.webp" alt="Quote card reading “Every chart is an argument.”" loading="lazy"></div>
-            <div style="--ar:.8"><img src="images/lecture-office-hours.webp" alt="Live office hours post for Thursday evenings on Zoom" loading="lazy"></div>
-            <div style="--ar:.8"><img src="images/lecture-quiz.webp" alt="Quiz reminder post with a countdown to Sunday’s deadline" loading="lazy"></div>
-          </div>
-          <div class="row">
             <div class="wide" style="--ar:1.78"><img src="images/lecture-lower-third-professor.webp" alt="Instructor name lower third over an illustrated lecture recording" loading="lazy"></div>
             <div class="wide" style="--ar:1.78"><img src="images/lecture-lower-third-key-term.webp" alt="Key-term definition lower third for “Truncated axis” over a chart slide" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/canvas-home.webp" alt="Canvas course home page with a Data 101 banner, quick-link buttons, eight module cards, and a To Do sidebar" loading="lazy"></div>
+            <div class="wide" style="--ar:1.78"><img src="images/canvas-module.webp" alt="Canvas Module 3 overview page with learning objectives, a weekly checklist, and lecture video cards" loading="lazy"></div>
+          </div>
+          <div class="row">
+            <div class="wide" style="--ar:1.78"><img src="images/canvas-lecture.webp" alt="Canvas lecture page with the embedded captioned video, a key terms panel, and a transcript accordion" loading="lazy"></div>
+            <div class="wide" style="--ar:1.78"><img src="images/canvas-discussion.webp" alt="Canvas discussion assignment with numbered instructions, a rubric, an example post, and a student reply" loading="lazy"></div>
           </div>
         </div>
       </article>
@@ -215,6 +220,66 @@
         </figure>
       </div>
       <p class="video-note">Note: Captions are not burned into these videos. They were delivered as separate caption files through the video player.</p>
+    </section>
+
+    <section class="project" id="ai-workflows">
+      <h2>AI-Enabled Video Workflows</h2>
+      <p>AI handles the slow first passes of production, so more time goes into story, pacing, and polish. The editorial decisions stay with me.</p>
+      <div class="ai-grid">
+        <article class="ai-card">
+          <div class="ai-fig">
+            <svg viewBox="0 0 400 220" role="img" aria-label="Diagram: highlighted lines in a transcript become clips on an editing timeline">
+              <rect width="400" height="220" rx="12" fill="#F6F3EC"/>
+              <rect x="20" y="22" width="150" height="176" rx="8" fill="#fff" stroke="#D9CFC1"/>
+              <g fill="#D9CFC1"><rect x="34" y="40" width="110" height="7" rx="3"/><rect x="34" y="66" width="96" height="7" rx="3"/><rect x="34" y="104" width="104" height="7" rx="3"/><rect x="34" y="142" width="90" height="7" rx="3"/><rect x="34" y="168" width="112" height="7" rx="3"/></g>
+              <g fill="#B9A590"><rect x="34" y="53" width="122" height="7" rx="3"/><rect x="34" y="85" width="118" height="7" rx="3"/><rect x="34" y="123" width="108" height="7" rx="3"/><rect x="34" y="155" width="100" height="7" rx="3"/></g>
+              <path d="M182 110 H214" stroke="#36302A" stroke-width="3"/><path d="M208 102 L218 110 L208 118" fill="none" stroke="#36302A" stroke-width="3"/>
+              <rect x="228" y="56" width="152" height="108" rx="8" fill="#36302A"/>
+              <g fill="#B9A590"><rect x="238" y="72" width="36" height="22" rx="3"/><rect x="278" y="72" width="40" height="22" rx="3"/><rect x="322" y="72" width="30" height="22" rx="3"/><rect x="356" y="72" width="16" height="22" rx="3"/></g>
+              <g fill="#8C7A64"><rect x="238" y="102" width="36" height="16" rx="3"/><rect x="278" y="102" width="40" height="16" rx="3"/><rect x="322" y="102" width="30" height="16" rx="3"/><rect x="356" y="102" width="16" height="16" rx="3"/></g>
+              <rect x="238" y="128" width="134" height="12" rx="3" fill="#5E5246"/>
+              <path d="M300 64 V152" stroke="#F6F3EC" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Timeline assembly</h3>
+          <p>Interviews and lectures are transcribed automatically. I edit the transcript to pull selects, cut filler and dead air, and assemble a first rough cut, so hours of footage become a working timeline in minutes.</p>
+        </article>
+        <article class="ai-card">
+          <div class="ai-fig">
+            <svg viewBox="0 0 400 220" role="img" aria-label="Diagram: a text prompt becomes a strip of generated video frames">
+              <defs><linearGradient id="aiSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2C98F"/><stop offset="1" stop-color="#C98F6A"/></linearGradient></defs>
+              <rect width="400" height="220" rx="12" fill="#F6F3EC"/>
+              <rect x="20" y="24" width="360" height="44" rx="22" fill="#fff" stroke="#D9CFC1"/>
+              <circle cx="44" cy="46" r="9" fill="#B9A590"/>
+              <text x="62" y="51" font-family="Roboto, Arial, sans-serif" font-size="14" fill="#36302A">Slow aerial shot of a campus at sunrise</text>
+              <rect x="20" y="86" width="360" height="114" rx="8" fill="#36302A"/>
+              <g fill="#F6F3EC" opacity=".55"><rect x="28" y="92" width="10" height="7" rx="1"/><rect x="58" y="92" width="10" height="7" rx="1"/><rect x="88" y="92" width="10" height="7" rx="1"/><rect x="118" y="92" width="10" height="7" rx="1"/><rect x="148" y="92" width="10" height="7" rx="1"/><rect x="178" y="92" width="10" height="7" rx="1"/><rect x="208" y="92" width="10" height="7" rx="1"/><rect x="238" y="92" width="10" height="7" rx="1"/><rect x="268" y="92" width="10" height="7" rx="1"/><rect x="298" y="92" width="10" height="7" rx="1"/><rect x="328" y="92" width="10" height="7" rx="1"/><rect x="358" y="92" width="10" height="7" rx="1"/><rect x="28" y="187" width="10" height="7" rx="1"/><rect x="58" y="187" width="10" height="7" rx="1"/><rect x="88" y="187" width="10" height="7" rx="1"/><rect x="118" y="187" width="10" height="7" rx="1"/><rect x="148" y="187" width="10" height="7" rx="1"/><rect x="178" y="187" width="10" height="7" rx="1"/><rect x="208" y="187" width="10" height="7" rx="1"/><rect x="238" y="187" width="10" height="7" rx="1"/><rect x="268" y="187" width="10" height="7" rx="1"/><rect x="298" y="187" width="10" height="7" rx="1"/><rect x="328" y="187" width="10" height="7" rx="1"/><rect x="358" y="187" width="10" height="7" rx="1"/></g>
+              <g><rect x="30" y="106" width="106" height="74" rx="4" fill="url(#aiSky)"/><path d="M30 162 L56 150 L78 156 L98 140 L120 150 L136 146 V180 H30 Z" fill="#5E5246"/><rect x="66" y="142" width="20" height="16" fill="#8C7A64"/><circle cx="112" cy="124" r="9" fill="#FBE3B0"/></g>
+              <g><rect x="147" y="106" width="106" height="74" rx="4" fill="url(#aiSky)"/><path d="M147 160 L176 146 L198 152 L218 136 L240 146 L253 142 V180 H147 Z" fill="#5E5246"/><rect x="180" y="138" width="24" height="18" fill="#8C7A64"/><circle cx="228" cy="120" r="10" fill="#FBE3B0"/></g>
+              <g><rect x="264" y="106" width="106" height="74" rx="4" fill="url(#aiSky)"/><path d="M264 158 L296 142 L318 148 L338 130 L360 140 L370 138 V180 H264 Z" fill="#5E5246"/><rect x="300" y="132" width="28" height="22" fill="#8C7A64"/><circle cx="350" cy="116" r="11" fill="#FBE3B0"/></g>
+            </svg>
+          </div>
+          <h3>AI-generated footage</h3>
+          <p>When filming isn't practical, I generate short b-roll from text prompts, such as establishing shots, abstract backgrounds, and concept visuals. Each clip is color-matched and trimmed to sit naturally alongside the filmed footage.</p>
+        </article>
+        <article class="ai-card">
+          <div class="ai-fig">
+            <svg viewBox="0 0 400 220" role="img" aria-label="Diagram: a square image is extended with generative fill into a widescreen frame">
+              <rect width="400" height="220" rx="12" fill="#F6F3EC"/>
+              <rect x="40" y="30" width="320" height="160" rx="8" fill="#fff" stroke="#B9A590" stroke-width="2" stroke-dasharray="8 6"/>
+              <rect x="40" y="30" width="320" height="160" rx="8" fill="#EADFCF" opacity=".55"/>
+              <rect x="140" y="30" width="120" height="160" fill="#C9B79F"/>
+              <circle cx="200" cy="92" r="26" fill="#F6F3EC"/>
+              <path d="M140 190 C170 150 230 150 260 190 Z" fill="#36302A"/>
+              <path d="M40 160 C80 140 110 150 140 158 M260 158 C290 148 330 140 360 156" stroke="#B9A590" stroke-width="3" fill="none"/>
+              <g fill="#36302A"><path d="M84 64 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/><path d="M316 70 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/></g>
+              <g stroke="#36302A" stroke-width="2.5" fill="none"><path d="M126 110 H94"/><path d="M102 102 L94 110 L102 118"/><path d="M274 110 H306"/><path d="M298 102 L306 110 L298 118"/></g>
+            </svg>
+          </div>
+          <h3>AI-generated imagery</h3>
+          <p>I create custom stills for thumbnails, title cards, slide backgrounds, and lower thirds, and use generative fill to extend or clean up photos so they fit any aspect ratio.</p>
+        </article>
+      </div>
     </section>
   </div>
 </main>
