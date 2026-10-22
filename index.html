@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alyssa Pace | Digital Media Enthusiast</title>
-<meta name="description" content="Portfolio of Alyssa Pace: graphics campaigns, event flyers, and video production for community and faith organizations.">
+<meta name="description" content="Portfolio of Alyssa Pace: graphics campaigns and video production.">
 <meta property="og:title" content="Alyssa Pace | Digital Media Enthusiast">
-<meta property="og:description" content="Graphics campaigns, event flyers, and video production.">
+<meta property="og:description" content="Graphics campaigns and video production.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="images/risen-indeed-main.webp">
+<meta property="og:image" content="images/campaign-keynote.webp">
 <meta name="theme-color" content="#B9A590">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23B9A590'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='15' fill='%2336302A'%3EAP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,6 +59,8 @@
   .project h2{ font-size:clamp(1.8rem,3vw,2.85rem); line-height:1.05; }
   .project p{ margin-top:18px; max-width:68ch; font-size:1rem; line-height:1.45; }
   .project-video p{ max-width:none; }
+  .project .kicker{ margin-top:12px; font-size:.95rem; font-weight:500; color:var(--ink-2); }
+  .project .kicker + p{ margin-top:10px; }
 
   /* Justified rows: each item grows by its aspect ratio so a row shares one height */
   .rows{ margin-top:24px; display:grid; gap:10px; }
@@ -83,11 +85,6 @@
     .video{ flex:none; }
     .video.vertical{ width:min(100%, 320px); }
   }
-
-  /* Flyers */
-  .flyers{ margin-top:24px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
-  .flyers img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--radius); background:#E7E0D5; }
-  @media (max-width:760px){ .flyers{ grid-template-columns:1fr; } }
 
   .site-footer{ padding-block:28px; border-top:1px solid rgba(54,48,42,.25); font-size:.9rem; }
 </style>
@@ -124,23 +121,24 @@
 
     <section class="project">
       <h2>Graphics Campaign</h2>
-      <p>I designed a graphics campaign that unified our church’s visual presence across every platform. I created projector slides, lower thirds, and a cohesive set of social media posts that included invitation graphics, member photos, and weekly service setlists. I blended warm textures, expressive typography, and authentic community imagery to create a welcoming, story-driven aesthetic.</p>
+      <p class="kicker">Concept project: Harbor &amp; Pine, a fictional coworking brand</p>
+      <p>A launch campaign for a coworking company opening its second location. One visual system carries across every touchpoint: keynote slides, video lower thirds, and social posts for the grand-opening invitation, weekly programming, a founding-member offer, workshops, and hiring. A restrained pine-and-brass palette, a confident serif, and an arched-doorway motif keep it professional and welcoming.</p>
       <div class="rows">
         <div class="row">
-          <div class="wide" style="--ar:1.78"><img src="images/risen-indeed-main.webp" alt="“Risen Indeed” projector slide with the church steeple and a red cross panel" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/setlist-2.webp" alt="Sunday setlist social post" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/photo-3.webp" alt="Member photo social post" loading="lazy"></div>
+          <div class="wide" style="--ar:1.78"><img src="images/campaign-keynote.webp" alt="Keynote slide reading “Open doors,” with an illustrated arched doorway opening onto warm light" loading="lazy"></div>
+          <div style="--ar:.8"><img src="images/campaign-week.webp" alt="“This week at Harbor &amp; Pine” social post listing five weekday events and times" loading="lazy"></div>
+          <div style="--ar:.8"><img src="images/campaign-numbers.webp" alt="“Built for the way you work” post: 120 open desks, 14 private offices, 3 podcast booths, 1 rooftop terrace" loading="lazy"></div>
         </div>
         <div class="row">
-          <div style="--ar:.8"><img src="images/photo-2.webp" alt="“Risen Indeed” member photo social post" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/invite-3.webp" alt="“Join Us Sunday” invitation graphic" loading="lazy"></div>
-          <div class="small" style="--ar:1"><img src="images/choir.webp" alt="Choir graphic with a Bach quote" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/invite-2.webp" alt="“You’re Invited” invitation graphic" loading="lazy"></div>
-          <div style="--ar:.8"><img src="images/verse-3.webp" alt="John 3:16 verse graphic" loading="lazy"></div>
+          <div style="--ar:.8"><img src="images/campaign-invite.webp" alt="Grand opening invitation with an arched “You’re invited” headline" loading="lazy"></div>
+          <div style="--ar:.8"><img src="images/campaign-offer.webp" alt="Founding member offer post: $149 per month for the first 50 members" loading="lazy"></div>
+          <div class="small" style="--ar:1"><img src="images/campaign-quote.webp" alt="Brand quote card reading “Good work needs good company.”" loading="lazy"></div>
+          <div style="--ar:.8"><img src="images/campaign-hiring.webp" alt="Hiring post for a Community Manager role" loading="lazy"></div>
+          <div style="--ar:.8"><img src="images/campaign-lunch.webp" alt="Lunch &amp; Learn workshop post on pricing your services" loading="lazy"></div>
         </div>
         <div class="row">
-          <div class="wide" style="--ar:1.78"><img src="images/lower-third-1.webp" alt="“Risen Indeed” lower third over a speaker" loading="lazy"></div>
-          <div class="wide" style="--ar:1.78"><img src="images/lower-third-2.webp" alt="“Need Prayer?” lower third over the choir" loading="lazy"></div>
+          <div class="wide" style="--ar:1.78"><img src="images/campaign-lower-third-founder.webp" alt="Video lower third naming the company founder over an illustrated interview shot" loading="lazy"></div>
+          <div class="wide" style="--ar:1.78"><img src="images/campaign-lower-third-event.webp" alt="Video lower third promoting the weekly Founders Breakfast over an illustrated event shot" loading="lazy"></div>
         </div>
       </div>
     </section>
@@ -158,16 +156,6 @@
         <figure class="video" style="--ar:1.7778;margin:0">
           <iframe src="https://www.youtube.com/embed/XmEbGlvH2gw" title="VBS 2026 Recap" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </figure>
-      </div>
-    </section>
-
-    <section class="project">
-      <h2>Event Flyers</h2>
-      <p>These event flyers were developed to capture attention and communicate important seasonal events at a glance. I tailored each design to reflect the spirit of the occasion while maintaining a clean and approachable visual style.</p>
-      <div class="flyers">
-        <img src="images/easter-kids.webp" alt="Easter kids event flyer" loading="lazy">
-        <img src="images/fall-festival.webp" alt="Fall Festival flyer" loading="lazy">
-        <img src="images/back-to-school.webp" alt="Back to School flyer" loading="lazy">
       </div>
     </section>
   </div>
